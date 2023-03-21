@@ -25,7 +25,7 @@
 # API
 ### 1. 블로그 검색 API
 - [GET] /blogs
-    - Test: http://localhost/blogs?query=테스트&sort=ACCURACY&page=1&size=10
+    - Test: http://localhost:8080/blogs?query=테스트&sort=ACCURACY&page=1&size=10
     - Query parameters:
   ```json
       "query": "test", // String, 검색어
@@ -57,7 +57,7 @@
 
 ### 2. 인기 검색어 목록 조회 API
 - [GET] /blogs/top-searched-words
-    - Test: http://localhost/blogs/top-searched-words
+    - Test: http://localhost:8080/blogs/top-searched-words
     - Query parameters:
     ```json
         "start": "2023-03-22 00:00:00", // datetime, 조회 시작 시간 (yyyy-MM-dd HH:mm:ss, default: now - 1hour)
