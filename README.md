@@ -11,8 +11,16 @@
 - H2
 
 # 로컬 실행 방법
+### Gradle Boot Run
 - Gradle Build를 통해 Dependencies Download
 - Gradle Boot Run (port: 8080)
+### Gradle BootJar
+- Gradle BootJar를 통해 jar 파일 생성({localProjectRootDir}/build/libs/serachengine-0.0.1-SNAPSHOT.jar)
+- jar 파일 실행
+  - $ java -jar {localProjectRootDir}/build/libs/serachengine-0.0.1-SNAPSHOT.jar
+### jar 파일 다운로드
+- github project root dir내 "search-blog.jar" 파일 다운로드
+- java -jar search-blog.jar
 
 # API
 ### 1. 블로그 검색 API
