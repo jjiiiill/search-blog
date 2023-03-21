@@ -68,8 +68,8 @@
     {
       "topSearchedWords": [
         {
-          "word": "카카오",
-          "count": 3
+          "word": "카카오", // String, 검색 단어
+          "count": 3 // Int, 검색 횟수
         },
         {
           "word": "네이버",
