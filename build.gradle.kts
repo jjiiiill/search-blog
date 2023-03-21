@@ -6,7 +6,6 @@ plugins {
 	kotlin("jvm") version "1.7.22"
 	kotlin("plugin.spring") version "1.7.22"
 	kotlin("plugin.jpa") version "1.7.22"
-	kotlin("kapt") version "1.7.22"
 }
 
 group = "com.blog"
@@ -31,8 +30,6 @@ dependencies {
 
 	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
 	implementation("com.vladmihalcea:hibernate-types-60:2.21.1")
-	implementation("com.infobip:infobip-spring-data-jpa-querydsl-boot-starter:8.1.0")
-	kapt("com.querydsl:querydsl-apt:5.0.0:jakarta")
 
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 

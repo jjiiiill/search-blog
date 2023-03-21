@@ -19,6 +19,19 @@ spring:
       schema-locations: classpath:h2/schema.sql
       data-locations: classpath:h2/data.sql
 
+search-engine:
+  kakao:
+    scheme: https
+    host: dapi.kakao.com
+    blog-search-path: /v2/search/blog
+    rest-api-key: dc285c9586869a2d88f4ce9eebc52c5b
+  naver:
+    scheme: https
+    host: openapi.naver.com
+    blog-search-path: v1/search/blog.json
+    naver-client-id: TN6GBIT2pcx8qgqXg14C
+    naver-client-secret: Gwwpd4nAm2
+
 logging:
   level:
     org:
