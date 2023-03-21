@@ -19,7 +19,7 @@
 - jar 파일 실행
   - $ java -jar {localProjectRootDir}/build/libs/serachengine-0.0.1-SNAPSHOT.jar
 ### jar 파일 다운로드
-- github project root dir내 "search-blog.jar" 파일 다운로드
+- github project root dir내 "search-blog.jar" 파일 다운로드 (https://github.com/jjiiiill/search-blog/blob/master/search-blog.jar)
 - java -jar search-blog.jar
 
 # API
