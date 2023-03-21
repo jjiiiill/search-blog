@@ -7,7 +7,6 @@ data class KakaoBlogSearchParams(
     val sort: String,
     val page: Int,
     val size: Int,
-    val target: String?
 ) {
     companion object {
         fun from(params: BlogSearchParams) = KakaoBlogSearchParams(
@@ -15,7 +14,6 @@ data class KakaoBlogSearchParams(
             sort = params.sort.kakaoValue,
             page = params.page,
             size = params.size,
-            target = params.target?.kakaoValue,
         )
     }
 }

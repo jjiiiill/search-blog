@@ -4,14 +4,12 @@ import com.blog.serachengine.application.exception.PageMaximumSizeExceededExcept
 import com.blog.serachengine.application.exception.PageSizeMaximumSizeExceededException
 import com.blog.serachengine.application.model.BlogSearchParams
 import com.blog.serachengine.application.model.BlogSearchResultSort
-import com.blog.serachengine.application.model.BlogSearchTarget
 
 data class BlogSearchRequest(
     val query: String,
     val sort: BlogSearchResultSort = BlogSearchResultSort.ACCURACY,
     val page: Int = 1,
     val size: Int = 10,
-    val target: BlogSearchTarget? = null
 ) {
     fun validate() {
         if (page < 1 || page > PAGE_MAXIMUM_SIZE) {
@@ -23,7 +21,7 @@ data class BlogSearchRequest(
         }
     }
 
-    fun toParams() = BlogSearchParams(query, sort, page, size, target)
+    fun toParams() = BlogSearchParams(query, sort, page, size)
 
     companion object {
         private const val PAGE_MAXIMUM_SIZE = 50

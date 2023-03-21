@@ -5,5 +5,4 @@ data class BlogSearchParams(
     val sort: BlogSearchResultSort,
     val page: Int,
     val size: Int,
-    val target: BlogSearchTarget?
 )
